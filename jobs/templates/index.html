@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    {% extends "layout.html" %}
-    <h1>Jobs</h1>
-    <meta charset="UTF-8">
-    <title>Flask_Test</title>
-</head>
-<body>
-
-</body>
-</html>
+{% extends "layout.html" %}
+{% block content %}
+  <div class="columns">
+    <div class="column">
+      <h1>Jobs</h1>
+    </div>
+    <div class="column is-one-fifth">
+    </div>
+  </div>
+    {{ show_jobs(jobs) }}
+{% endblock %}
